@@ -1,0 +1,9 @@
+peran utamanya adalah mengotomatiskan proses deployment aplikasi. Ketika pengembang ingin menjalankan sebuah aplikasi, Kubernetes akan menempatkan container-container yang membentuk aplikasi tersebut ke dalam node-node (mesin) yang tersedia dalam cluster, berdasarkan sumber daya yang tersedia dan kebutuhan aplikasi. Tidak hanya itu, Kubernetes juga mengatur proses penskalaan aplikasi. Jika permintaan terhadap aplikasi meningkat, Kubernetes dapat secara otomatis menambah jumlah container untuk menangani beban tersebut, dan sebaliknya akan menguranginya saat beban menurun, sehingga efisiensi penggunaan sumber daya tetap terjaga.
+
+Selain itu, Kubernetes juga menyediakan mekanisme untuk mendistribusikan trafik secara merata ke container-container yang menjalankan aplikasi, melalui fitur load balancing. Ini memastikan bahwa tidak ada satu container pun yang terbebani secara berlebihan. Jika terjadi kegagalan pada salah satu container, Kubernetes secara otomatis akan mencoba memulihkan aplikasi dengan menjalankan ulang container tersebut atau menjadwalkannya di node lain yang masih sehat. Hal ini menjadikan aplikasi lebih tangguh terhadap gangguan.
+
+Dalam hal pembaruan aplikasi, Kubernetes mendukung proses rolling update, yaitu mengganti versi lama dengan versi baru secara bertahap tanpa menghentikan layanan. Jika terjadi kesalahan dalam versi baru, Kubernetes juga dapat melakukan rollback ke versi sebelumnya secara otomatis.
+
+Kubernetes juga memudahkan pengelolaan konfigurasi dan data sensitif seperti kata sandi dan token melalui fitur konfigurasi dan secret management, yang disimpan terpisah dari kode aplikasi. Hal ini meningkatkan keamanan dan fleksibilitas dalam pengelolaan.
+
+Secara keseluruhan, Kubernetes memungkinkan tim pengembang dan operasi untuk menjalankan, memantau, dan mengelola aplikasi container secara handal dan terotomatisasi di berbagai lingkungan, mulai dari cloud publik hingga data center lokal.
